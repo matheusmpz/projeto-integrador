@@ -8,38 +8,28 @@
   <title>Juventude Criativa</title>
 </head>
 <body>
-  <!-- 
-  
-    SÓ TESTANDO ESSA MERDA  
-  
-  
-  -->
-    <header class="flex justify-around py-4">
-        <div>
-          <a href="index.html"><img src="../assets/geral/logo.svg" alt="logotipo Juventude Criativa"></a>
-        </div>
-        <nav class="flex items-center gap-10">
-          <div>
-              <a class="text-azul font-amifer-regular hover:text-orange-600 hover:font-amifer-bold transition-colors" href="quem-somos.html"><p>Quem Somos</p></a>
-          </div>
-          <div>
-              <a class="text-azul font-amifer-regular hover:text-orange-600 hover:font-amifer-bold transition-colors" href="projetos.html"><p>Projetos</p></a>
-          </div>
-          <div>
-              <a class="text-azul font-amifer-regular hover:text-orange-600 hover:font-amifer-bold transition-colors" href="atividade.html"><p>Atividades Socioeducativas</p></a>
-          </div>
-          <div>
-              <a class="text-azul font-amifer-regular hover:text-orange-600 hover:font-amifer-bold transition-colors" href="doacao.html"><p>Doações</p></a>
-          </div>
-        </nav>
-    </header>
+  <header class="flex max-w-[1600px] mx-auto justify-between py-4">
+    <div>
+      <a href="index.html"><img src="../assets/geral/logo.svg" alt="logotipo Juventude Criativa"></a>
+    </div>
+    <nav class="flex items-center gap-10">
+        <div><a class="text-xl text-azul font-amifer-regular hover:text-laranja transition-colors" href="quem-somos.html"><p>Quem Somos</p></a></div>
+        <div><a class="text-xl text-azul font-amifer-regular hover:text-laranja transition-colors" href="projetos.html"><p>Projetos</p></a></div>
+        <div><a class="text-xl text-azul font-amifer-regular hover:text-laranja transition-colors" href="atividade.html"><p>Voluntariado</p></a></div>
+        <div><a class="text-xl text-azul font-amifer-regular hover:text-laranja transition-colors" href="doacao.html"><p>Doações</p></a></div>
+    </nav>
+  </header>
     <hr class="h-0.5 bg-azul">
-    <section class="flex py-28 justify-center items-center">
+
+    <!-- HEADLINE -->
+    <section
+      class="flex py-16 max-w-[1600px] mx-auto justify-between items-center"
+    >
         <div class="space-y-10">
             <div class="flex gap-4">
-                <div class="font-amifer-regular text-xl rounded-lg text-white bg-orange-600 py-1 px-2">EDUCAÇÃO</div>
-                <div class="font-amifer-regular text-xl rounded-lg text-white bg-orange-600 py-1 px-2">OTIMISMO</div>
-                <div class="font-amifer-regular text-xl rounded-lg text-white bg-orange-600 py-1 px-2">SOLIDARIEDADE</div>
+                <div class="font-amifer-regular text-xl rounded-lg text-white bg-laranja py-1 px-2">EDUCAÇÃO</div>
+                <div class="font-amifer-regular text-xl rounded-lg text-white bg-laranja py-1 px-2">OTIMISMO</div>
+                <div class="font-amifer-regular text-xl rounded-lg text-white bg-laranja py-1 px-2">SOLIDARIEDADE</div>
             </div>
             <div>
                 <h1 class="text-azul text-6xl font-amifer-bold">Criando Condições e <br> Oportunidades para <br> Crianças de baixa renda</h1>
@@ -52,5 +42,81 @@
           <img src="../assets/index/illustração.png" alt="Criança brincado ilustração">
         </div>
     </section>
+
+    <!-- PROJETOS -->
+    <section>
+        <div>
+          <img src="..." alt="Imagem Projetos">
+        </div>
+        <div>
+          <div>
+              <h2>Conheça um pouco <br> do trabalho que fazemos <br> com nossas crianças!</h2>
+              <p>O processo ensino-aprendizagem é realizado através da <br> proposta de desenvolvimento de projetos, que são recursos de <br> trabalho, e que trazem de seu interesse, vivenciados através de <br> jogos, brincadeiras, expressão corporal, artes, música e outros.</p>
+          </div>
+          <div>
+            <a href="projetos.html"><button>CONHEÇA NOSSOS PROJETOS</button></a>
+          </div>
+        </div>
+    </section>
+
+    <!-- ALERT VOLUNTÁRIO -->
+    <section
+      class="relative bg-azul h-[500px] my-12 flex flex-col justify-center items-center gap-9"
+      style="background-image: radial-gradient(circle at bottom, rgba(231, 74, 64, 0.55), rgba(231, 74, 64, 0) 50%);"
+    >
+        <h2 class="text-branco text-6xl font-amifer-bold">Seja Voluntário na <br> Juventude <span class="text-laranja">Criativa!</span></h2>
+        <p class="text-branco text-xl opacity-90">Use seu potencial para ajudar o próximo, a Juventude precisa de você!</p>
+        <div>
+            <a href="voluntario.html"><button class="w-80 h-12 bg-laranja text-branco rounded-full	text-xl">QUERO SER UM VOLUNTÁRIO</button></a>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section 
+      class="flex justify-center flex-col items-center"
+    >
+        <div>
+            <h2 class="text-center">Perguntas Frequentes</h2>
+            <p class="text-center">Está pensando em se envolver com o nosso projeto? Reunimos aqui as <span>informações mais <br> importantes</span> para tirar todas as suas dúvidas e te ajudar a fazer parte desta jornada.</p>
+        </div>
+        <div>
+            <!-- FAQ -->
+        </div>
+    </section>
+
+    <!-- FEEDBACK -->
+    <section>
+        <div>
+            <h2>Veja o que os pais estão dizendo sobre o nosso projeto!</h2>
+            <p>Conheça a experiência de outras famílias e veja como <br> o nosso <span>projeto transformou suas vidas.</span></p>
+        </div>
+        <div>
+            <div><!--CARD--></div>
+            <div><!--CARD--></div>
+            <div><!--CARD--></div>
+            <div><!--CARD--></div>
+        </div>
+    </section>
+
+    <footer>
+      <div class="h-60 bg-azul">
+        <div class="h-60 flex items-center justify-between max-w-[1600px] mx-auto">
+          <div>
+              <a href="index.html"><img src="../assets/geral/logo-footer.png" alt="logo juventude criativa"></a>
+          </div>
+          <div>
+              <h3 class="text-branco text-2xl font-amifer-bold">Informações</h3>
+              <ul>
+                <li class="text-branco font-amifer-regular">• Avenida República, 799</li>
+                <li class="text-branco font-amifer-regular">• Fone: (14) 3433.5004</li>
+                <li class="text-branco font-amifer-regular">• contato@jucrimarilia.org.br</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+          <p class="text-azul font-amifer-regular text-center py-4">Direitos autorais © 2024 Juventude Criativa de Marília. All rights reserved.</p>
+      </div>
+  </footer>
 </body>
 </html>
