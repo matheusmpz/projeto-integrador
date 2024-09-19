@@ -9,19 +9,20 @@
 </head>
 <body>
   <header
-    class="flex max-w-[1600px] mx-auto justify-between py-4"
+    class=" py-4 bg-azul"
   >
-    <div>
-      <a href="index.html"><img src="../assets/geral/logo.svg" alt="logotipo Juventude Criativa"></a>
+    <div class="flex max-w-[1600px] mx-auto justify-between">
+        <div>
+          <a href="index.html"><img src="../assets/geral/logo-footer.png" alt="logotipo Juventude Criativa"></a>
+        </div>
+        <nav class="flex items-center gap-10">
+            <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="quem-somos.html"><p>Quem Somos</p></a></div>
+            <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="projetos.html"><p>Projetos</p></a></div>
+            <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="atividade.html"><p>Voluntariado</p></a></div>
+            <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="doacao.html"><p>Doações</p></a></div>
+        </nav>
     </div>
-    <nav class="flex items-center gap-10">
-        <div><a class="text-xl text-azul font-amifer-regular hover:text-laranja transition-colors" href="quem-somos.html"><p>Quem Somos</p></a></div>
-        <div><a class="text-xl text-azul font-amifer-regular hover:text-laranja transition-colors" href="projetos.html"><p>Projetos</p></a></div>
-        <div><a class="text-xl text-azul font-amifer-regular hover:text-laranja transition-colors" href="atividade.html"><p>Voluntariado</p></a></div>
-        <div><a class="text-xl text-azul font-amifer-regular hover:text-laranja transition-colors" href="doacao.html"><p>Doações</p></a></div>
-    </nav>
   </header>
-    <hr class="h-0.5 bg-azul">
 
     <!-- HEADLINE -->
     <section
@@ -46,17 +47,19 @@
     </section>
 
     <!-- PROJETOS -->
-    <section>
+    <section
+      class="flex items-center gap-x-36 justify-center m-24"
+    >
         <div>
-          <img src="..." alt="Imagem Projetos">
+          <img src="../assets/index/ilustração-corda.png" alt="Imagem Projetos">
         </div>
-        <div>
-          <div>
-              <h2>Conheça um pouco <br> do trabalho que fazemos <br> com nossas crianças!</h2>
-              <p>O processo ensino-aprendizagem é realizado através da <br> proposta de desenvolvimento de projetos, que são recursos de <br> trabalho, e que trazem de seu interesse, vivenciados através de <br> jogos, brincadeiras, expressão corporal, artes, música e outros.</p>
+        <div class="space-y-6">
+          <div class="space-y-6">
+              <h2 class="text-4xl font-amifer-bold text-azul">Conheça um pouco <br> do trabalho que fazemos <br> com nossas crianças!</h2>
+              <p class="font-amifer-regular">O processo ensino-aprendizagem é realizado através da <br> proposta de desenvolvimento de projetos, que são recursos de <br> trabalho, e que trazem de seu interesse, vivenciados através de <br> jogos, brincadeiras, expressão corporal, artes, música e outros.</p>
           </div>
           <div>
-            <a href="projetos.html"><button>CONHEÇA NOSSOS PROJETOS</button></a>
+            <a href="projetos.html"><button class="w-80 h-12 bg-laranja text-branco rounded-full	text-xl">CONHEÇA NOSSOS PROJETOS</button></a>
           </div>
         </div>
     </section>
@@ -75,11 +78,11 @@
 
     <!-- FAQ -->
     <section 
-      class="flex justify-center flex-col items-center"
+      class="flex justify-center flex-col items-center space-y-16 m-24"
     >
-        <div>
-            <h2 class="text-center">Perguntas Frequentes</h2>
-            <p class="text-center">Está pensando em se envolver com o nosso projeto? Reunimos aqui as <span>informações mais <br> importantes</span> para tirar todas as suas dúvidas e te ajudar a fazer parte desta jornada.</p>
+        <div class="space-y-5">
+            <h2 class="text-center text-4xl font-amifer-bold text-azul">Perguntas Frequentes</h2>
+            <p class="text-center font-amifer-regular text-2xl text-azul">Está pensando em se envolver com o nosso projeto? Reunimos aqui as <span class="text-laranja font-amifer-bold">informações mais <br> importantes</span> para tirar todas as suas dúvidas e te ajudar a fazer parte desta jornada.</p>
         </div>
         <div>
             <!-- FAQ -->
@@ -87,16 +90,86 @@
     </section>
 
     <!-- FEEDBACK -->
-    <section>
-        <div>
-            <h2>Veja o que os pais estão dizendo sobre o nosso projeto!</h2>
-            <p>Conheça a experiência de outras famílias e veja como <br> o nosso <span>projeto transformou suas vidas.</span></p>
+    <section
+      class="m-24"
+    >
+        <div class="space-y-5">
+            <h2 class="text-center text-4xl font-amifer-bold text-azul">Veja o que os pais estão dizendo sobre o nosso projeto!</h2>
+            <p class="text-center font-amifer-regular text-2xl text-azul">Conheça a experiência de outras famílias e veja como <br> o nosso <span class="text-laranja font-amifer-bold">projeto transformou suas vidas.</span></p>
         </div>
-        <div>
-            <div><!--CARD--></div>
-            <div><!--CARD--></div>
-            <div><!--CARD--></div>
-            <div><!--CARD--></div>
+        <div class="flex gap-6 mt-10 justify-center">
+
+            <div class="bg-azul w-[380px] h-[400px] rounded-xl relative">
+              <div class="h-full p-7">
+                 <div>
+                      <img src="../assets/index/user.svg" alt="">
+                    </div>
+                    <div class="mt-4 space-y-3">
+                      <p class="text-branco text-2xl font-amifer-regular">Junior Moinhos</p>
+                      <div>
+                        <img src="../assets/index/star.png" alt="">
+                      </div>
+                      <p class="text-branco font-amifer-regular text-base">Extremamente importante no auxílio a educação dos nossos filhos. Todos que lá trabalham são capacitados e muito seriedade. Super recomendo.</p>
+                    </div>
+                    <div class="flex justify-end items-end absolute bottom-0 right-0 p-6">
+                      <p class="text-branco font-amifer-regular text-base">3 anos atrás</p>
+                    </div>
+              </div>
+            </div>
+
+            <div class="bg-azul w-[380px] h-[400px] rounded-xl relative">
+              <div class="h-full p-7">
+                 <div>
+                      <img src="../assets/index/user.svg" alt="">
+                    </div>
+                    <div class="mt-4 space-y-3">
+                      <p class="text-branco text-2xl font-amifer-regular">Rodnei E Alves</p>
+                      <div>
+                        <img src="../assets/index/star.png" alt="">
+                      </div>
+                      <p class="text-branco font-amifer-regular text-base">Extremamente importante no auxílio a educação dos nossos filhos. Todos que lá trabalham são capacitados e muito seriedade. Super recomendo.</p>
+                    </div>
+                    <div class="flex justify-end items-end absolute bottom-0 right-0 p-6">
+                      <p class="text-branco font-amifer-regular text-base">8 anos atrás</p>
+                    </div>
+              </div>
+            </div>
+
+            <div class="bg-azul w-[380px] h-[400px] rounded-xl relative">
+              <div class="h-full p-7">
+                 <div>
+                      <img src="../assets/index/user.svg" alt="">
+                    </div>
+                    <div class="mt-4 space-y-3">
+                      <p class="text-branco text-2xl font-amifer-regular">Elaine Souza</p>
+                      <div>
+                        <img src="../assets/index/star.png" alt="">
+                      </div>
+                      <p class="text-branco font-amifer-regular text-base">Extremamente importante no auxílio a educação dos nossos filhos. Todos que lá trabalham são capacitados e muito seriedade. Super recomendo.</p>
+                    </div>
+                    <div class="flex justify-end items-end absolute bottom-0 right-0 p-6">
+                      <p class="text-branco font-amifer-regular text-base">1 ano atrás</p>
+                    </div>
+              </div>
+            </div>
+
+            <div class="bg-azul w-[380px] h-[400px] rounded-xl relative">
+              <div class="h-full p-7">
+                 <div>
+                      <img src="../assets/index/user.svg" alt="">
+                    </div>
+                    <div class="mt-4 space-y-3">
+                      <p class="text-branco text-2xl font-amifer-regular">Paulo Roberto Martins</p>
+                      <div>
+                        <img src="../assets/index/star.png" alt="">
+                      </div>
+                      <p class="text-branco font-amifer-regular text-base">Extremamente importante no auxílio a educação dos nossos filhos. Todos que lá trabalham são capacitados e muito seriedade. Super recomendo.</p>
+                    </div>
+                    <div class="flex justify-end items-end absolute bottom-0 right-0 p-6">
+                      <p class="text-branco font-amifer-regular text-base">9 anos atrás</p>
+                    </div>
+              </div>
+            </div>
         </div>
     </section>
 
