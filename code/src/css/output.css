@@ -914,7 +914,7 @@ video {
 @font-face {
   font-family: 'Amifer-Regular';
 
-  src: url('fonts/Amifer/Amifer-Regular.otf') format("opentype");
+  src: url('../fontsAmifer/Amifer-Regular.otf') format("opentype");
 
   font-style: normal;
 
@@ -924,7 +924,7 @@ video {
 @font-face {
   font-family: 'Amifer-Medium';
 
-  src: url('fonts/Amifer/Amifer-Medium.otf') format("opentype");
+  src: url('../fonts/Amifer/Amifer-Medium.otf') format("opentype");
 
   font-style: normal;
 
@@ -934,7 +934,7 @@ video {
 @font-face {
   font-family: 'Amifer-Medium-Italic';
 
-  src: url('fonts/Amifer/Amifer-Medium-Italic.otf') format("opentype");
+  src: url('../fonts/Amifer/Amifer-Medium-Italic.otf') format("opentype");
 
   font-style: normal;
 
@@ -944,7 +944,7 @@ video {
 @font-face {
   font-family: 'Amifer-Italic';
 
-  src: url('fonts/Amifer/Amifer-Italic.otf') format("opentype");
+  src: url('../fonts/Amifer/Amifer-Italic.otf') format("opentype");
 
   font-style: normal;
 
@@ -954,7 +954,7 @@ video {
 @font-face {
   font-family: 'Amifer-ExtraBold';
 
-  src: url('fonts/Amifer/Amifer-ExtraBold.otf') format("opentype");
+  src: url('../fonts/Amifer/Amifer-ExtraBold.otf') format("opentype");
 
   font-style: normal;
 
@@ -964,7 +964,7 @@ video {
 @font-face {
   font-family: 'Amifer-ExtraBold-Italic';
 
-  src: url('fonts/Amifer/Amifer-ExtraBold-Italic.otf') format("opentype");
+  src: url('../fonts/Amifer/Amifer-ExtraBold-Italic.otf') format("opentype");
 
   font-style: normal;
 
@@ -974,7 +974,7 @@ video {
 @font-face {
   font-family: 'Amifer-Bold';
 
-  src: url('fonts/Amifer/Amifer-Bold.otf') format("opentype");
+  src: url('../fonts/Amifer/Amifer-Bold.otf') format("opentype");
 
   font-style: normal;
 
@@ -984,7 +984,7 @@ video {
 @font-face {
   font-family: 'Amifer-Bold-Italic';
 
-  src: url('fonts/Amifer/Amifer-Bold-Italic.otf') format("opentype");
+  src: url('../fonts/Amifer/Amifer-Bold-Italic.otf') format("opentype");
 
   font-style: normal;
 
@@ -994,7 +994,7 @@ video {
 @font-face {
   font-family: 'Amifer-Black';
 
-  src: url('fonts/Amifer/Amifer-Black.otf') format("opentype");
+  src: url('../fonts/Amifer/Amifer-Black.otf') format("opentype");
 
   font-style: normal;
 
@@ -1004,7 +1004,7 @@ video {
 @font-face {
   font-family: 'Amifer-Black-Italic';
 
-  src: url('fonts/Amifer/Amifer-Black-Italic.otf') format("opentype");
+  src: url('../fonts/Amifer/Amifer-Black-Italic.otf') format("opentype");
 
   font-style: normal;
 
