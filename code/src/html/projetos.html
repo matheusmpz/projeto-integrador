@@ -1,27 +1,163 @@
+ 
 <!DOCTYPE html>
 <html lang="pt-br">
+ 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../css/output.css" rel="stylesheet">
-  <link rel="shortcut icon" href="../assets/geral/fav-icon.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="../../assets/geral/fav-icon.svg" type="image/x-icon">
   <title>Juventude Criativa - Projetos</title>
+  <style>
+    /* Estilos do carrossel */
+    .carousel-slide {
+      display: none;
+      transition: opacity 0.5s ease;
+    }
+ 
+    .carousel-slide.active {
+      display: block;
+    }
+  </style>
 </head>
 <body>
-  <header
-    class=" py-4 bg-azul"
-  >
+  <header class="py-4 bg-azul">
     <div class="flex max-w-[1600px] mx-auto justify-between">
-        <div>
-          <a href="index.html"><img src="../../assets/geral/logo-footer.png" alt="logotipo Juventude Criativa"></a>
-        </div>
-        <nav class="flex items-center gap-10">
-            <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="quem-somos.html"><p>Quem Somos</p></a></div>
-            <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="projetos.html"><p>Projetos</p></a></div>
-            <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="voluntario.html"><p>Voluntariado</p></a></div>
-            <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="doacao.html"><p>Doações</p></a></div>
-        </nav>
+      <div>
+        <a href="index.html"><img src="../../assets/geral/logo-footer.png" alt="logotipo Juventude Criativa"></a>
+      </div>
+      <nav class="flex items-center gap-10">
+        <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors"
+            href="quem-somos.html">
+            <p>Quem Somos</p>
+          </a></div>
+        <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors"
+            href="projetos.html">
+            <p>Projetos</p>
+          </a></div>
+        <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors"
+            href="voluntario.html">
+            <p>Voluntariado</p>
+          </a></div>
+        <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="doacao.html">
+            <p>Doações</p>
+          </a></div>
+      </nav>
     </div>
   </header>
+ 
+  <div class="flex flex-col items-center px-4 py-32 space-y-8">
+    <h2 class="text-4xl font-amifer-bold text-azul">Descubra nossas iniciativas</h2>
+    <p class="text-lg font-amifer-regular text-center leading-relaxed max-w-4xl mt-10">
+      Atividades com crianças são essenciais para seu desenvolvimento integral, promovendo aprendizado cognitivo,
+      habilidades sociais e emocionais. <span class="text-orange-500 font-bold">Brincadeiras estimulam criatividade</span>,
+      motricidade e ensinam a trabalhar em equipe e
+      resolver conflitos, criando um ambiente seguro que prepara as crianças para a vida e fortalece sua confiança e
+      resiliência.
+    </p>
+  </div>
+
+  <section class="flex max-w-[1600px] mx-auto justify-around items-center">
+    <!-- Carrossel de Imagens -->
+     <article>
+      <h3 class="font-amifer-bold text-3xl">Conheça um pouco <br>
+        mais sobre cada um <br> de nossos projeto!</h3>
+     </article>
+      <article class="carousel-container">
+          <!-- Slides -->
+          <div class="carousel-slide active">
+            <div class="flex space-x-32 w-[960px] h-[540px] rounded-xl bg-laranja items-center justify-center">
+                <div class="w-72 space-y-4">
+                    <h3 class="font-amifer-bold text-2xl text-branco">Texto legal</h3>
+                    <p class="text-branco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea laudantium voluptatem, quisquam id, iure recusandae, facilis dolore optio pariatur sequi neque iusto. Rem nesciunt id consequatur quas quam magni!</p>
+                </div>
+                <div>
+                    <img class="max-w-[450px]" src="../../assets/index/illustração.png" alt="Imagem 1">
+                </div>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="flex space-x-32 w-[960px] h-[540px] rounded-xl bg-laranja items-center justify-center">
+                <div class="w-72 space-y-4">
+                    <h3 class="font-amifer-bold text-2xl text-branco">Texto legal</h3>
+                    <p class="text-branco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea laudantium voluptatem, quisquam id, iure recusandae, facilis dolore optio pariatur sequi neque iusto. Rem nesciunt id consequatur quas quam magni!</p>
+                </div>
+                <div>
+                    <img class="max-w-[450px]" src="../../assets/index/ilustração-corda.png" alt="Imagem 1">
+                </div>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="flex space-x-32 w-[960px] h-[540px] rounded-xl bg-laranja items-center justify-center">
+                <div class="w-72 space-y-4">
+                    <h3 class="font-amifer-bold text-2xl text-branco">Texto legal</h3>
+                    <p class="text-branco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea laudantium voluptatem, quisquam id, iure recusandae, facilis dolore optio pariatur sequi neque iusto. Rem nesciunt id consequatur quas quam magni!</p>
+                </div>
+                <div>
+                    <img class="max-w-[450px]" src="../../assets/index/illustração.png" alt="Imagem 1">
+                </div>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="flex space-x-32 w-[960px] h-[540px] rounded-xl bg-laranja items-center justify-center">
+                <div class="w-72 space-y-4">
+                    <h3 class="font-amifer-bold text-2xl text-branco">Texto legal</h3>
+                    <p class="text-branco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ea laudantium voluptatem, quisquam id, iure recusandae, facilis dolore optio pariatur sequi neque iusto. Rem nesciunt id consequatur quas quam magni!</p>
+                </div>
+                <div>
+                    <img class="max-w-[450px]" src="../../assets/index/illustração-corda.png" alt="Imagem 1">
+                </div>
+            </div>
+          </div>
+          
+      </article>
+  </section>
+  
+  <div class="text-center py-32 space-y-8">
+    <h3 class="text-4xl font-amifer-bold text-azul">
+      Ficou em dúvida com<br> alguma questão? Fale com<br> um de nossos voluntários
+    </h3>
+    <p class="text-lg font-amifer-regular text-center leading-relaxed max-w-4xl mx-auto mt-10">
+      A educação é um presente valioso para nossos filhos. Na Escola Juventude Criativa, oferecemos um ambiente
+      estimulante que promove o  desenvolvimento das potencialidades e a formação de cidadãos conscientes e criativos.
+      Convidamos você a conhecer nossa proposta educativa e a preencher o formulário de matrícula, garantindo
+      acesso a uma educação que valoriza curiosidade, inovação e diversidade. Nossa equipe está pronta para acolher
+      cada aluno de forma individual, promovendo um aprendizado significativo.
+    </p>
+  </div>
+ 
+  <footer>
+    <div class="h-60 bg-azul">
+      <div class="h-60 flex items-center justify-between max-w-[1600px] mx-auto">
+        <div>
+            <a href="index.html"><img src="../../assets/geral/logo-footer.png" alt="logo juventude criativa"></a>
+        </div>
+        <div>
+            <h3 class="text-branco text-2xl font-amifer-bold">Informações</h3>
+            <ul>
+              <li class="text-branco font-amifer-regular">• Avenida República, 799</li>
+              <li class="text-branco font-amifer-regular">• Fone: (14) 3433.5004</li>
+              <li class="text-branco font-amifer-regular">• contato@jucrimarilia.org.br</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div>
+        <p class="text-azul font-amifer-regular text-center py-4">Direitos autorais © 2024 Juventude Criativa de Marília. All rights reserved.</p>
+    </div>
+</footer>
+  <script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll(".carousel-slide");
+ 
+    function showNextSlide() {
+      slides[currentIndex].classList.remove("active");
+ 
+      currentIndex = (currentIndex + 1) % slides.length;
+ 
+      slides[currentIndex].classList.add("active");
+    }
+     setInterval(showNextSlide, 6000);
+  </script>
 </body>
 </html>
