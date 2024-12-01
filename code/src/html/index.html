@@ -4,13 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../css/output.css" rel="stylesheet">
-  <link rel="shortcut icon" href="../assets/geral/fav-icon.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="../../assets/geral/fav-icon.svg" type="image/x-icon">
   <title>Juventude Criativa</title>
 </head>
 <body>
-  <header
-    class="py-4 bg-azul"
-  >
+  <header class="py-4 bg-azul">
     <div class="flex max-w-[1600px] mx-auto justify-between">
         <div>
           <a href="index.html"><img src="../../assets/geral/logo-footer.png" alt="logotipo Juventude Criativa"></a>
@@ -23,11 +21,8 @@
         </nav>
     </div>
   </header>
-
     <!-- HEADLINE -->
-    <section
-      class="flex py-16 max-w-[1600px] mx-auto justify-between items-center"
-    >
+    <section class="flex py-16 max-w-[1600px] mx-auto justify-between items-center">
         <div class="space-y-10">
             <div class="flex gap-4">
                 <div class="font-amifer-regular text-xl rounded-lg text-white bg-laranja py-1 px-2">EDUCAÇÃO</div>
@@ -45,11 +40,8 @@
           <img src="../../assets/index/illustração.png" alt="Criança brincado ilustração">
         </div>
     </section>
-
     <!-- PROJETOS -->
-    <section
-      class="flex items-center gap-x-36 justify-center m-24"
-    >
+    <section class="flex items-center gap-x-36 justify-center m-24">
         <div>
           <img src="../../assets/index/ilustração-corda.png" alt="Imagem Projetos">
         </div>
@@ -63,32 +55,99 @@
           </div>
         </div>
     </section>
-
     <!-- ALERT VOLUNTÁRIO -->
-    <section
-      class="relative bg-azul h-[500px] my-12 flex flex-col justify-center items-center gap-9"
-      style="background-image: radial-gradient(circle at bottom, rgba(231, 74, 64, 0.55), rgba(231, 74, 64, 0) 50%);"
-    >
+    <section class="relative bg-azul h-[500px] my-12 flex flex-col justify-center items-center gap-9" style="background-image: radial-gradient(circle at bottom, rgba(231, 74, 64, 0.55), rgba(231, 74, 64, 0) 50%);">
         <h2 class="text-branco text-6xl font-amifer-bold">Seja Voluntário na <br> Juventude <span class="text-laranja">Criativa!</span></h2>
         <p class="text-branco text-xl opacity-90">Use seu potencial para ajudar o próximo, a Juventude precisa de você!</p>
         <div>
             <a href="voluntario.html"><button class="w-80 h-12 bg-laranja text-branco rounded-full	text-xl">QUERO SER UM VOLUNTÁRIO</button></a>
         </div>
     </section>
-
     <!-- FAQ -->
-    <section 
-      class="flex justify-center flex-col items-center space-y-16 m-24"
-    >
+    <section class="flex justify-center flex-col items-center space-y-16 m-24">
         <div class="space-y-5">
             <h2 class="text-center text-4xl font-amifer-bold text-azul">Perguntas Frequentes</h2>
             <p class="text-center font-amifer-regular text-2xl text-azul">Está pensando em se envolver com o nosso projeto? Reunimos aqui as <span class="text-laranja font-amifer-bold">informações mais <br> importantes</span> para tirar todas as suas dúvidas e te ajudar a fazer parte desta jornada.</p>
         </div>
-        <div>
-            <!-- FAQ -->
+        <div class="w-[1276px] mx-auto space-y-1">
+            <!-- Pergunta 1 -->
+            <div class="border rounded">
+              <button
+                class="w-full flex justify-between items-center px-4 py-6 bg-gray-100 text-left"
+                onclick="toggleAccordion(this)"
+              >
+                <span>Pergunta 1</span>
+                <svg class="w-5 h-5 transition-transform transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="hidden px-4 py-2 bg-white">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+            <!-- Pergunta 2 -->
+            <div class="border rounded">
+              <button
+                class="w-full flex justify-between items-center px-4 py-6 bg-gray-100 text-left"
+                onclick="toggleAccordion(this)"
+              >
+                <span>Pergunta 2</span>
+                <svg class="w-5 h-5 transition-transform transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="hidden px-4 py-2 bg-white">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+            <!-- Pergunta 3 -->
+            <div class="border rounded">
+              <button
+                class="w-full flex justify-between items-center px-4 py-6 bg-gray-100 text-left"
+                onclick="toggleAccordion(this)"
+              >
+                <span>Pergunta 3</span>
+                <svg class="w-5 h-5 transition-transform transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div class="hidden px-4 py-2 bg-white">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+            <!-- Pergunta 4 -->
+          <div class="border rounded">
+            <button
+              class="w-full flex justify-between items-center px-4 py-6 bg-gray-100 text-left"
+              onclick="toggleAccordion(this)"
+            >
+              <span>Pergunta 4</span>
+              <svg class="w-5 h-5 transition-transform transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="hidden px-4 py-2 bg-white">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+          <!-- Pergunta 5 -->
+          <div class="border rounded">
+            <button
+              class="w-full flex justify-between items-center px-4 py-6 bg-gray-100 text-left"
+              onclick="toggleAccordion(this)"
+            >
+              <span>Pergunta 5</span>
+              <svg class="w-5 h-5 transition-transform transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="hidden px-4 py-2 bg-white">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
         </div>
     </section>
-
     <!-- FEEDBACK -->
     <section
       class="m-24"
@@ -172,7 +231,6 @@
             </div>
         </div>
     </section>
-
     <footer>
       <div class="h-60 bg-azul">
         <div class="h-60 flex items-center justify-between max-w-[1600px] mx-auto">
@@ -193,5 +251,6 @@
           <p class="text-azul font-amifer-regular text-center py-4">Direitos autorais © 2024 Juventude Criativa de Marília. All rights reserved.</p>
       </div>
   </footer>
+  <script src="../js/index.js"></script>
 </body>
 </html>
