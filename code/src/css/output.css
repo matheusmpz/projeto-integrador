@@ -1009,6 +1009,10 @@ video {
   font-family: Amifer-Regular, sans-serif;
 }
 
+.font-amifer-medium {
+  font-family: Amifer-Medium, sans-serif;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
