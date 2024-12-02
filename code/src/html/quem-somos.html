@@ -8,12 +8,7 @@
   <title>Juventude Criativa - Quem Somos</title>
 </head>
 <body class="font-amifer-regular text-azul"> 
-
-
-
-
-
-  <header class="p-4 bg-azul relative z-10">
+  <header class="py-4 bg-azul relative px-4 z-10">
     <div class="flex max-w-[1600px] mx-auto justify-between items-center">
       <div>
         <a href="index.html">
@@ -21,13 +16,13 @@
         </a>
       </div>
       <!-- Botões do menu -->
-      <div class="relative">
+      <div class="relative z-20"> <!-- Definido z-20 aqui -->
         <!-- Botão abrir -->
         <button id="menu-toggle" class="lg:hidden text-branco text-3xl focus:outline-none">
           ☰
         </button>
         <!-- Botão fechar -->
-        <button id="menu-close" class="lg:hidden text-branco text-3xl focus:outline-none hidden">
+        <button id="menu-close" class="lg:hidden text-branco text-3xl focus:outline-none hidden z-30"> <!-- z-30 para garantir que fique no topo -->
           ✕
         </button>
       </div>
@@ -56,7 +51,7 @@
       </nav>
     </div>
     <!-- Menu hambúrguer para dispositivos móveis -->
-    <div id="menu-overlay" class="fixed inset-0 bg-azul hidden flex flex-col justify-center items-center z-50">
+    <div id="menu-overlay" class="fixed inset-0 bg-azul hidden flex flex-col justify-center items-center z-10"> <!-- z-10 para o fundo -->
       <nav class="flex flex-col gap-6 text-center">
         <a class="text-2xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="quem-somos.html">Quem Somos</a>
         <a class="text-2xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="projetos.html">Projetos</a>
@@ -65,15 +60,6 @@
       </nav>
     </div>
   </header>
-  
-  
-  
-
-
-
-
-
-
   <section class="space-y-4 py-16">
     <h1 class="text-azul text-4xl font-amifer-bold text-center">Conheça um pouco mais do <br> nosso time de voluntários</h1>
     <p class="font-amifer-regular text-center">Conheça a diretoria da nossa instituição, formada por pessoas <br> comprometidas em liderar e fortalecer nossos projetos.</p>
@@ -163,26 +149,6 @@
     </div>
   </footer>
 
-  <script>
-   // Seleção dos elementos
-    const menuToggle = document.getElementById('menu-toggle');
-    const menuClose = document.getElementById('menu-close');
-    const menuOverlay = document.getElementById('menu-overlay');
-
-    // Abre o menu
-    menuToggle.addEventListener('click', () => {
-      menuOverlay.classList.remove('hidden'); // Mostra o menu
-      menuToggle.classList.add('hidden');    // Esconde o botão de abrir
-      menuClose.classList.remove('hidden');  // Mostra o botão de fechar
-    });
-
-    // Fecha o menu
-    menuClose.addEventListener('click', () => {
-      menuOverlay.classList.add('hidden');  // Esconde o menu
-      menuClose.classList.add('hidden');   // Esconde o botão de fechar
-      menuToggle.classList.remove('hidden'); // Mostra o botão de abrir
-    });
-
-  </script>
+  <script src="../js/navbar.js"></script>
 </body>
 </html>

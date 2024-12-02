@@ -8,22 +8,60 @@
   <title>Juventude Criativa - Como doar</title>
 </head>
 <body>
-  <header class=" py-4 bg-azul">
-    <div class="flex max-w-[1600px] mx-auto justify-between">
+  <header class="py-4 bg-azul relative px-4 z-10">
+    <div class="flex max-w-[1600px] mx-auto justify-between items-center">
+      <div>
+        <a href="index.html">
+          <img src="../../assets/geral/logo-footer.png" alt="logotipo Juventude Criativa">
+        </a>
+      </div>
+      <!-- Botões do menu -->
+      <div class="relative z-20"> <!-- Definido z-20 aqui -->
+        <!-- Botão abrir -->
+        <button id="menu-toggle" class="lg:hidden text-branco text-3xl focus:outline-none">
+          ☰
+        </button>
+        <!-- Botão fechar -->
+        <button id="menu-close" class="lg:hidden text-branco text-3xl focus:outline-none hidden z-30"> <!-- z-30 para garantir que fique no topo -->
+          ✕
+        </button>
+      </div>
+      <!-- Navegação para desktop -->
+      <nav class="hidden lg:flex flex-row items-center gap-10">
         <div>
-          <a href="index.html"><img src="../../assets/geral/logo-footer.png" alt="logotipo Juventude Criativa"></a>
+          <a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="quem-somos.html">
+            <p>Quem Somos</p>
+          </a>
         </div>
-        <nav class="flex items-center gap-10">
-            <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="quem-somos.html"><p>Quem Somos</p></a></div>
-            <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="projetos.html"><p>Projetos</p></a></div>
-            <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="voluntario.html"><p>Voluntariado</p></a></div>
-            <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="doacao.html"><p>Doações</p></a></div>
-        </nav>
+        <div>
+          <a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="projetos.html">
+            <p>Projetos</p>
+          </a>
+        </div>
+        <div>
+          <a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="voluntario.html">
+            <p>Voluntariado</p>
+          </a>
+        </div>
+        <div>
+          <a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="doacao.html">
+            <p>Doações</p>
+          </a>
+        </div>
+      </nav>
+    </div>
+    <!-- Menu hambúrguer para dispositivos móveis -->
+    <div id="menu-overlay" class="fixed inset-0 bg-azul hidden flex flex-col justify-center items-center z-10"> <!-- z-10 para o fundo -->
+      <nav class="flex flex-col gap-6 text-center">
+        <a class="text-2xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="quem-somos.html">Quem Somos</a>
+        <a class="text-2xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="projetos.html">Projetos</a>
+        <a class="text-2xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="voluntario.html">Voluntariado</a>
+        <a class="text-2xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="doacao.html">Doações</a>
+      </nav>
     </div>
   </header>
 
   <main>
-
     <div class="container text-center mt-20">
     <h2 class="text-4xl font-bold">Transforme vidas com amor:</h2>
     <p class="container mx-auto  text-xl w-[935px] mt-6">
@@ -82,10 +120,7 @@
       <button class="bg-laranja text-branco rounded-xl px-12 py-3">Doar agora</button>
     </div>
   </div>
-
   </main>
-
-
 <footer>
   <div class="h-60 bg-azul mt-10">
     <div class="h-60 flex items-center justify-between max-w-[1600px] mx-auto">
@@ -106,5 +141,6 @@
       <p class="text-azul font-amifer-regular text-center py-4">Direitos autorais © 2024 Juventude Criativa de Marília. All rights reserved.</p>
   </div>
 </footer>
+<script src="../js/navbar.js"></script>
 </body>
 </html>
