@@ -8,19 +8,72 @@
   <title>Juventude Criativa - Quem Somos</title>
 </head>
 <body class="font-amifer-regular text-azul"> 
-  <header class=" py-4 bg-azul">
-    <div class="flex max-w-[1600px] mx-auto justify-between">
+
+
+
+
+
+  <header class="p-4 bg-azul relative z-10">
+    <div class="flex max-w-[1600px] mx-auto justify-between items-center">
+      <div>
+        <a href="index.html">
+          <img src="../../assets/geral/logo-footer.png" alt="logotipo Juventude Criativa">
+        </a>
+      </div>
+      <!-- Botões do menu -->
+      <div class="relative">
+        <!-- Botão abrir -->
+        <button id="menu-toggle" class="lg:hidden text-branco text-3xl focus:outline-none">
+          ☰
+        </button>
+        <!-- Botão fechar -->
+        <button id="menu-close" class="lg:hidden text-branco text-3xl focus:outline-none hidden">
+          ✕
+        </button>
+      </div>
+      <!-- Navegação para desktop -->
+      <nav class="hidden lg:flex flex-row items-center gap-10">
         <div>
-          <a href="index.html"><img src="../../assets/geral/logo-footer.png" alt="logotipo Juventude Criativa"></a>
+          <a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="quem-somos.html">
+            <p>Quem Somos</p>
+          </a>
         </div>
-        <nav class="flex items-center gap-10">
-            <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="quem-somos.html"><p>Quem Somos</p></a></div>
-            <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="projetos.html"><p>Projetos</p></a></div>
-            <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="voluntario.html"><p>Voluntariado</p></a></div>
-            <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="doacao.html"><p>Doações</p></a></div>
-        </nav>
+        <div>
+          <a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="projetos.html">
+            <p>Projetos</p>
+          </a>
+        </div>
+        <div>
+          <a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="voluntario.html">
+            <p>Voluntariado</p>
+          </a>
+        </div>
+        <div>
+          <a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="doacao.html">
+            <p>Doações</p>
+          </a>
+        </div>
+      </nav>
+    </div>
+    <!-- Menu hambúrguer para dispositivos móveis -->
+    <div id="menu-overlay" class="fixed inset-0 bg-azul hidden flex flex-col justify-center items-center z-50">
+      <nav class="flex flex-col gap-6 text-center">
+        <a class="text-2xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="quem-somos.html">Quem Somos</a>
+        <a class="text-2xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="projetos.html">Projetos</a>
+        <a class="text-2xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="voluntario.html">Voluntariado</a>
+        <a class="text-2xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="doacao.html">Doações</a>
+      </nav>
     </div>
   </header>
+  
+  
+  
+
+
+
+
+
+
   <section class="space-y-4 py-16">
     <h1 class="text-azul text-4xl font-amifer-bold text-center">Conheça um pouco mais do <br> nosso time de voluntários</h1>
     <p class="font-amifer-regular text-center">Conheça a diretoria da nossa instituição, formada por pessoas <br> comprometidas em liderar e fortalecer nossos projetos.</p>
@@ -56,7 +109,7 @@
     </div>
   </section>
   <section class="flex justify-center items-center mt-16">
-    <article class="flex items-center justify-between w-[1291px] space-x-[123px]">
+    <article class="flex items-center justify-between w-[1291px]">
       <div class="flex space-x-10">
         <div class="space-y-4">
           <p class="text-center bg-[#D9D9D9] w-72 h-72 rounded-lg">[Imagem]</p>
@@ -75,7 +128,9 @@
       </div>
       <div class="space-y-8 mb-16">
         <h2 class="font-amifer-bold text-3xl">Use seu potencial para <br> ajudar o próximo, a <br> Juventude precisa de você!</h2>
-        <button class="w-72 h-10 bg-laranja text-branco rounded-full text-base">CONHEÇA NOSSOS PROJETOS</button>
+        <div>
+          <a href="projetos.html"><button class="w-72 h-10 bg-laranja text-branco rounded-full text-base">CONHEÇA NOSSOS PROJETOS</button></a>
+        </div>
       </div>
     </article>
   </section>
@@ -107,5 +162,27 @@
         <p class="text-azul font-amifer-regular text-center py-4">Direitos autorais © 2024 Juventude Criativa de Marília. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+   // Seleção dos elementos
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuClose = document.getElementById('menu-close');
+    const menuOverlay = document.getElementById('menu-overlay');
+
+    // Abre o menu
+    menuToggle.addEventListener('click', () => {
+      menuOverlay.classList.remove('hidden'); // Mostra o menu
+      menuToggle.classList.add('hidden');    // Esconde o botão de abrir
+      menuClose.classList.remove('hidden');  // Mostra o botão de fechar
+    });
+
+    // Fecha o menu
+    menuClose.addEventListener('click', () => {
+      menuOverlay.classList.add('hidden');  // Esconde o menu
+      menuClose.classList.add('hidden');   // Esconde o botão de fechar
+      menuToggle.classList.remove('hidden'); // Mostra o botão de abrir
+    });
+
+  </script>
 </body>
 </html>
