@@ -8,77 +8,39 @@
   <title>Juventude Criativa - Como doar</title>
 </head>
 <body>
-  <header class="py-4 bg-azul relative px-4 z-10">
-    <div class="flex max-w-[1600px] mx-auto justify-between items-center">
-      <div>
-        <a href="index.html">
-          <img src="../../assets/geral/logo-footer.png" alt="logotipo Juventude Criativa">
-        </a>
-      </div>
-      <!-- Botões do menu -->
-      <div class="relative z-20"> <!-- Definido z-20 aqui -->
-        <!-- Botão abrir -->
-        <button id="menu-toggle" class="lg:hidden text-branco text-3xl focus:outline-none">
-          ☰
-        </button>
-        <!-- Botão fechar -->
-        <button id="menu-close" class="lg:hidden text-branco text-3xl focus:outline-none hidden z-30"> <!-- z-30 para garantir que fique no topo -->
-          ✕
-        </button>
-      </div>
-      <!-- Navegação para desktop -->
-      <nav class="hidden lg:flex flex-row items-center gap-10">
+  <header class=" py-4 bg-azul">
+    <div class="flex max-w-[1600px] mx-auto justify-between">
         <div>
-          <a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="quem-somos.html">
-            <p>Quem Somos</p>
-          </a>
+          <a href="index.html"><img src="../../assets/geral/logo-footer.png" alt="logotipo Juventude Criativa"></a>
         </div>
-        <div>
-          <a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="projetos.html">
-            <p>Projetos</p>
-          </a>
-        </div>
-        <div>
-          <a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="voluntario.html">
-            <p>Voluntariado</p>
-          </a>
-        </div>
-        <div>
-          <a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="doacao.html">
-            <p>Doações</p>
-          </a>
-        </div>
-      </nav>
-    </div>
-    <!-- Menu hambúrguer para dispositivos móveis -->
-    <div id="menu-overlay" class="fixed inset-0 bg-azul hidden flex flex-col justify-center items-center z-10"> <!-- z-10 para o fundo -->
-      <nav class="flex flex-col gap-6 text-center">
-        <a class="text-2xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="quem-somos.html">Quem Somos</a>
-        <a class="text-2xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="projetos.html">Projetos</a>
-        <a class="text-2xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="voluntario.html">Voluntariado</a>
-        <a class="text-2xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="doacao.html">Doações</a>
-      </nav>
+        <nav class="flex items-center gap-10">
+            <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="quem-somos.html"><p>Quem Somos</p></a></div>
+            <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="projetos.html"><p>Projetos</p></a></div>
+            <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="voluntario.html"><p>Voluntariado</p></a></div>
+            <div><a class="text-xl text-branco font-amifer-regular hover:text-laranja transition-colors" href="doacao.html"><p>Doações</p></a></div>
+        </nav>
     </div>
   </header>
 
   <main>
-    <div class="container text-center mt-20">
+
+    <div class=" text-center mt-20 ">
     <h2 class="text-4xl font-bold">Transforme vidas com amor:</h2>
-    <p class="container mx-auto  text-xl w-[935px] mt-6">
+    <p class="container mx-auto  text-xl w-[935px]">
       Ao contribuir com o nosso instituto acolhedor, você transforma vidas! Sua doação impacta diretamente o futuro de crianças e adolescentes, proporcionando 
       a eles oportunidades para sonhar mais alto e construir um amanhã repleto de esperança e realizações. Juntos, estamos moldando um futuro melhor para aqueles que
        mais precisam.</p>
     </div>
 
-       <div class="flex justify-center mr-[160px] mt-14 relative mb-32">
+       <div class="flex justify-center items-center mt-14 relative mb-32">
 
-        <div class="bg-laranja/60 h-[400px] w-[302px] ml-20 mt-14"><div class="ml-5 mt-4 border-spacing-1"><img src="../../assets/doações/criança-1.jpg" alt=""></div></div>
+        <div class="bg-laranja/60 h-[400px] w-[302px] mt-14"><div class="ml-5 mt-4 border-spacing-1"><img src="../../assets/doações/criança-1.jpg" alt="" class="w-96"></div></div>
         <div class="bg-azul/80 h-[400px] w-[302px] ml-20"><div class="ml-5 mt-4"><img src="../../assets/doações/criança-2.jpg" alt=""></div></div>
         <div class="bg-laranja/45 h-[400px] w-[302px] ml-20 mt-14"><div class="ml-5 mt-4"><img src="../../assets/doações/criança-3.jpg" alt=""></div></div>
       
       </div>
 
-      <div class="flex items-center space-x-4 ml-20 ">
+      <div class="flex items-center space-x-4 ml-72 ">
     <div class="bg-laranja -500 h-16 w-16 rounded-full flex items-center justify-center mt-2">
         <img src="../../assets/doações/cartao.png" alt="" class="">
     </div>
@@ -90,8 +52,11 @@
   </div>
   </div>
 
-  <div class="bg-azul w-80 h-[350px] text-branco mt-10 rounded-xl p-4 ml-20">
-    <div class="space-y-4">
+
+    <div class="flex items-center space-x-6 justify-center">
+
+  <div class="bg-azul w-80 h-[350px] text-branco mt-10 rounded-xl p-4">
+    <div class="space-y-5">
       <p class="text-3xl font-bold">Apoio</p>
       <p>$10,00/mês</p>
       <hr>
@@ -100,9 +65,53 @@
           apoiando nossa causa e criando um impacto positivo na comunidade!
       </p>
   </div>
-  <div class="mt-4">
-    <button class="bg-laranja rounded-xl w-52 p-2">Assinar</button>
+  <div class="mt-14">
+    <button class="bg-laranja rounded-xl w-72 p-2">Assinar</button>
   </div>
+  </div>
+
+  <div class="bg-azul w-80 h-[350px] text-branco mt-10 rounded-xl p-4">
+    <div class="space-y-5">
+      <p class="text-3xl font-bold">Contribuição</p>
+      <p>R$ 20,00/mês</p>
+      <hr>
+      <p>
+        Com sua contribuição de R$20, você nos ajuda a fortalecer projetos que transformam vidas e fazem a diferença na nossa comunidade. Junte-se a nós!
+      </p>
+  </div>
+  <div class="mt-14">
+    <button class="bg-laranja rounded-xl w-72 p-2">Assinar</button>
+  </div>
+  </div>
+
+  <div class="bg-azul w-80 h-[350px] text-branco mt-10 rounded-xl p-4">
+    <div class="space-y-5">
+      <p class="text-3xl font-bold">Parceria</p>
+      <p>R$ 50,00/mês</p>
+      <hr>
+      <p>
+        Com R$50, sua parceria nos permite expandir iniciativas que impactam vidas, construindo um futuro mais justo e cheio de oportunidades para todos!
+      </p>
+  </div>
+  <div class="mt-14">
+    <button class="bg-laranja rounded-xl w-72 p-2">Assinar</button>
+  </div>
+  </div>
+
+  <div class="bg-azul w-80 h-[350px] text-branco mt-10 rounded-xl p-4">
+    <div class="space-y-5">
+      <p class="text-3xl font-bold">Legado</p>
+      <p>$100,00/mês</p>
+      <hr>
+      <p>
+        Com uma doação de R$100, você deixa um legado duradouro, ajudando a transformar vidas e criando um impacto que será sentido por gerações.
+      </p>
+  </div>
+  <div class="mt-14">
+    <button class="bg-laranja rounded-xl w-72 p-2">Assinar</button>
+  </div>
+  </div>
+
   </div>
 
 
@@ -117,10 +126,13 @@
       </div>
     </div>
     <div>
-      <button class="bg-laranja text-branco rounded-xl px-12 py-3">Doar agora</button>
+      <button class="bg-laranja text-branco rounded-xl px-12 py-2">Doar agora</button>
     </div>
   </div>
+
   </main>
+
+
 <footer>
   <div class="h-60 bg-azul mt-10">
     <div class="h-60 flex items-center justify-between max-w-[1600px] mx-auto">
@@ -141,6 +153,5 @@
       <p class="text-azul font-amifer-regular text-center py-4">Direitos autorais © 2024 Juventude Criativa de Marília. All rights reserved.</p>
   </div>
 </footer>
-<script src="../js/navbar.js"></script>
 </body>
 </html>
